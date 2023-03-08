@@ -83,7 +83,7 @@ public class AmazonStepdefinitions {
     @Then("{string} sayfasina gittigini test eder")
     public void sayfasina_gittigini_test_eder(String istenenUrl) {
         String actualUrl= Driver.getDriver().getCurrentUrl();
-        String expectedUrl= istenenUrl + "/";
+        String expectedUrl= ConfigReader.getProperty(istenenUrl) + "/";
         Assert.assertEquals(expectedUrl,actualUrl);
     }
 
