@@ -86,5 +86,16 @@ public class AmazonStepdefinitions {
         String expectedUrl= ConfigReader.getProperty(istenenUrl) + "/";
         Assert.assertEquals(expectedUrl,actualUrl);
     }
+    @When("{int}.urune gider")
+    public void urune_gider(Integer istenenIndex) {
+        amazonPage.istenenUrunElementi(istenenIndex).click();
+    }
+    @Then("urun isminin {string} icerdigini test eder")
+    public void urun_isminin_icerdigini_test_eder(String arananKelime) {
+
+        String actualUrunIsmi= amazonPage.ilkUrunIsimElementi.getText();
+        Assert.assertTrue(actualUrunIsmi.contains(arananKelime));
+
+    }
 
 }
