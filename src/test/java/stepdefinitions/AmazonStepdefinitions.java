@@ -1,5 +1,6 @@
 package stepdefinitions;
 
+import io.cucumber.java.en.And;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
@@ -9,6 +10,7 @@ import org.openqa.selenium.WebElement;
 import pages.AmazonPage;
 import utilities.ConfigReader;
 import utilities.Driver;
+import utilities.ReusableMethods;
 
 public class AmazonStepdefinitions {
     AmazonPage amazonPage= new AmazonPage();
@@ -57,4 +59,32 @@ public class AmazonStepdefinitions {
         String actualAramaSonucYazisi= amazonPage.aramaSonucElementi.getText();
         Assert.assertTrue(actualAramaSonucYazisi.contains(expectedIcerik));
     }
+
+
+    @Then("amazonda {string} icin arama yapar")
+    public void amazondaIcinAramaYapar(String arananKelime) {
+        amazonPage.aramaKutusu.sendKeys(arananKelime + Keys.ENTER);
+    }
+
+    @And("sonuclarin {string} icerdigini test eder")
+    public void sonuclarinIcerdiginiTestEder(String arananKelime) {
+        String actualAramaSonucYazisi= amazonPage.aramaSonucElementi.getText();
+        Assert.assertTrue(actualAramaSonucYazisi.contains(arananKelime));
+    }
+
+    @And("{int} saniye bekler")
+    public void saniyeBekler(int istenenSaniye) {
+        ReusableMethods.bekle(istenenSaniye);
+    }
+    @Given("kullanici {string} anasayfaya gider")
+    public void kullanici_anasayfaya_gider(String istenenUrl) {
+        Driver.getDriver().get(ConfigReader.getProperty(istenenUrl));
+    }
+    @Then("{string} sayfasina gittigini test eder")
+    public void sayfasina_gittigini_test_eder(String istenenUrl) {
+        String actualUrl= Driver.getDriver().getCurrentUrl();
+        String expectedUrl= istenenUrl + "/";
+        Assert.assertEquals(expectedUrl,actualUrl);
+    }
+
 }
