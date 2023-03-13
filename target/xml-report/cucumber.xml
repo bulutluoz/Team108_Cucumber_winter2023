@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="Cucumber" time="12.187" tests="1" skipped="0" failures="0" errors="0">
+<testcase classname="US1010 WebUniversity Testi" name="TC14 Webuniversity sayfasinda istenen gorevleri yapar" time="12.095">
+<system-out><![CDATA[
+Given kullanici "webUrl" anasayfaya gider...................................passed
+Then Login Portal gorununceye kadar asagi iner..............................passed
+And 2 saniye bekler.........................................................passed
+And Login Portal butonuna tiklar............................................passed
+And acilan ikinci window'a gecer............................................passed
+And Username kutusuna deger yazdirir........................................passed
+And Password kutusuna deger yazdirir........................................passed
+And 4 saniye bekler.........................................................passed
+Then webUniversity login butonuna basar.....................................passed
+And Popup'ta cikan yazinin validation failed oldugunu test eder.............passed
+And Ok diyerek Popup'i kapatir..............................................passed
+Then Ilk sayfaya geri doner.................................................passed
+And Ilk sayfaya donuldugunu test eder.......................................passed
+And tum sayfalari kapatir...................................................passed
+]]></system-out>
+</testcase>
+</testsuite>

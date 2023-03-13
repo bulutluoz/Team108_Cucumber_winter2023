@@ -1,5 +1,5 @@
 Feature: US1009 Herokuapp implicitly wait
-  @wip
+
   Scenario: TC13 kullanici implicitly wait ile gorevleri yapabilmeli
 
     Given kullanici "herokuUrl" anasayfaya gider
