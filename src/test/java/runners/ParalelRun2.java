@@ -11,9 +11,9 @@ import org.junit.runner.RunWith;
         },
         features = "src/test/resources/features",
         glue = "stepdefinitions",
-        tags = "@ss" ,
+        tags = "@pr2" ,
         dryRun = false
 )
 
-public class ParalelRunner2 {
+public class ParalelRun2 {
 }

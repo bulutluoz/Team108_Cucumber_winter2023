@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="Cucumber" time="19.86" tests="1" skipped="0" failures="1" errors="0">
+<testcase classname="US1011 demoqa sayfasinda istenen gorevler" name="TC15 kullanici istenen gorevleri yapabilmeli" time="19.762">
+<failure type="org.openqa.selenium.ElementNotInteractableException" message="element not interactable
+  (Session info: chrome=111.0.5563.64)
+Build info: version: '4.8.0', revision: '267030adea'
+System info: os.name: 'Mac OS X', os.arch: 'aarch64', os.version: '13.1', java.version: '11.0.15.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [e51dd51baf62785fe60015dadedda149, clickElement {id=1fb65cfd-dd9f-40ca-9988-a41ca2ea1ffd}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 111.0.5563.64, chrome: {chromedriverVersion: 111.0.5563.64 (c710e93d5b63..., userDataDir: /var/folders/k5/tn4cs92s1h3...}, goog:chromeOptions: {debuggerAddress: localhost:57089}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: MAC, proxy: Proxy(), se:cdp: ws://localhost:57089/devtoo..., se:cdpVersion: 111.0.5563.64, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on MAC (e51dd51baf62785fe60015dadedda149)] -&gt; xpath: (//li[@id='item-1'])[1]]
+Session ID: e51dd51baf62785fe60015dadedda149">
+<![CDATA[org.openqa.selenium.ElementNotInteractableException: element not interactable
+  (Session info: chrome=111.0.5563.64)
+Build info: version: '4.8.0', revision: '267030adea'
+System info: os.name: 'Mac OS X', os.arch: 'aarch64', os.version: '13.1', java.version: '11.0.15.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [e51dd51baf62785fe60015dadedda149, clickElement {id=1fb65cfd-dd9f-40ca-9988-a41ca2ea1ffd}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 111.0.5563.64, chrome: {chromedriverVersion: 111.0.5563.64 (c710e93d5b63..., userDataDir: /var/folders/k5/tn4cs92s1h3...}, goog:chromeOptions: {debuggerAddress: localhost:57089}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: MAC, proxy: Proxy(), se:cdp: ws://localhost:57089/devtoo..., se:cdpVersion: 111.0.5563.64, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on MAC (e51dd51baf62785fe60015dadedda149)] -> xpath: (//li[@id='item-1'])[1]]
+Session ID: e51dd51baf62785fe60015dadedda149
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:490)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:543)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:257)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:78)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:52)
+	at com.sun.proxy.$Proxy23.click(Unknown Source)
+	at stepdefinitions.DemoqaStepdefinitions.alerts_sekmesine_tiklar(DemoqaStepdefinitions.java:18)
+	at ✽.Alerts sekmesine tiklar(file:///Users/ahmetbulutluoz/IdeaProjects/com.team108_Cucumber/src/test/resources/features/US1011_demoqa.feature:7)
+]]>
+</failure>
+<system-out><![CDATA[
+Given kullanici "demoqaUrl" anasayfaya gider................................passed
+Then Alerts sekmesine tiklar................................................failed
+And ustten ikinci click me butonuna basar...................................skipped
+And Allert in gorunur olmasini bekler.......................................skipped
+Then Allert uzerindeki yazinin "This alert appeared after 5 seconds" oldugunu test eder.skipped
+And Ok diyerek alerti kapatir...............................................skipped
+]]></system-out>
+</testcase>
+</testsuite>

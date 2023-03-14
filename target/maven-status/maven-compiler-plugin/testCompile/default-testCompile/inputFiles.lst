@@ -1,14 +1,14 @@
-/Users/ahmetbulutluoz/IdeaProjects/com.team108_Cucumber/src/test/java/runners/ParalelRunner1.java
 /Users/ahmetbulutluoz/IdeaProjects/com.team108_Cucumber/src/test/java/pages/HerokuPage.java
 /Users/ahmetbulutluoz/IdeaProjects/com.team108_Cucumber/src/test/java/stepdefinitions/Hooks.java
 /Users/ahmetbulutluoz/IdeaProjects/com.team108_Cucumber/src/test/java/utilities/ReusableMethods.java
 /Users/ahmetbulutluoz/IdeaProjects/com.team108_Cucumber/src/test/java/pages/WebUniversityPage.java
-/Users/ahmetbulutluoz/IdeaProjects/com.team108_Cucumber/src/test/java/runners/ParalelRunner2.java
+/Users/ahmetbulutluoz/IdeaProjects/com.team108_Cucumber/src/test/java/runners/ParalelRun2.java
 /Users/ahmetbulutluoz/IdeaProjects/com.team108_Cucumber/src/test/java/stepdefinitions/QdStepdefinitions.java
 /Users/ahmetbulutluoz/IdeaProjects/com.team108_Cucumber/src/test/java/runners/Runner.java
 /Users/ahmetbulutluoz/IdeaProjects/com.team108_Cucumber/src/test/java/stepdefinitions/AmazonStepdefinitions.java
 /Users/ahmetbulutluoz/IdeaProjects/com.team108_Cucumber/src/test/java/stepdefinitions/HerokuStepdefinitions.java
 /Users/ahmetbulutluoz/IdeaProjects/com.team108_Cucumber/src/test/java/utilities/ConfigReader.java
+/Users/ahmetbulutluoz/IdeaProjects/com.team108_Cucumber/src/test/java/runners/ParalelRun1.java
 /Users/ahmetbulutluoz/IdeaProjects/com.team108_Cucumber/src/test/java/pages/QdPage.java
 /Users/ahmetbulutluoz/IdeaProjects/com.team108_Cucumber/src/test/java/utilities/Driver.java
 /Users/ahmetbulutluoz/IdeaProjects/com.team108_Cucumber/src/test/java/stepdefinitions/WebUniversityStepdefinitions.java

@@ -1,3 +1,4 @@
+@regression
 Feature: US1009 Herokuapp implicitly wait
 
   Scenario: TC13 kullanici implicitly wait ile gorevleri yapabilmeli

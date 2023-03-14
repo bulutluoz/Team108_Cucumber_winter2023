@@ -1,20 +1,45 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="Cucumber" time="12.505" tests="1" skipped="0" failures="0" errors="0">
-<testcase classname="US1010 WebUniversity Testi" name="TC14 Webuniversity sayfasinda istenen gorevleri yapar" time="12.427">
+<testsuite name="Cucumber" time="47.639" tests="5" skipped="0" failures="0" errors="0">
+<testcase classname="US1001 Kullanici Amazon sayfasinda arama yapar" name="TC01 Kullanici Amazonda Nutella aratir" time="9.495">
 <system-out><![CDATA[
-Given kullanici "webUrl" anasayfaya gider...................................passed
-Then Login Portal gorununceye kadar asagi iner..............................passed
-And 2 saniye bekler.........................................................passed
-And Login Portal butonuna tiklar............................................passed
-And acilan ikinci window'a gecer............................................passed
-And Username kutusuna deger yazdirir........................................passed
-And Password kutusuna deger yazdirir........................................passed
-And 4 saniye bekler.........................................................passed
-Then webUniversity login butonuna basar.....................................passed
-And Popup'ta cikan yazinin validation failed oldugunu test eder.............passed
-And Ok diyerek Popup'i kapatir..............................................passed
-Then Ilk sayfaya geri doner.................................................passed
-And Ilk sayfaya donuldugunu test eder.......................................passed
+Given kullanici Amazon anasayfaya gider.....................................passed
+Then arama kutusuna Nutella yazar ve enter tusuna basar.....................passed
+And arama sonuclarinin Nutella icerdigini test eder.........................passed
+And sayfayi kapatir.........................................................passed
+]]></system-out>
+</testcase>
+<testcase classname="US1001 Kullanici Amazon sayfasinda arama yapar" name="TC02 kullanici Amazonda Java aratir" time="7.623">
+<system-out><![CDATA[
+Given kullanici Amazon anasayfaya gider.....................................passed
+When arama kutusuna Java yazar ve enter tusuna basar........................passed
+Then arama sonuclarinin Java icerdigini test eder...........................passed
+And sayfayi kapatir.........................................................passed
+]]></system-out>
+</testcase>
+<testcase classname="US1001 Kullanici Amazon sayfasinda arama yapar" name="TC03 kullanici Amazonda Apple aratir" time="6.028">
+<system-out><![CDATA[
+Given kullanici Amazon anasayfaya gider.....................................passed
+When arama kutusuna Apple yazar ve enter tusuna basar.......................passed
+Then arama sonuclarinin Apple icerdigini test eder..........................passed
+And sayfayi kapatir.........................................................passed
+]]></system-out>
+</testcase>
+<testcase classname="US1003 Kullanici Amazonda parametre olarak yazdigi kelimeyi aratir" name="TC07 Kullanici parametre ile arama yaptirabilmeli" time="10.467">
+<system-out><![CDATA[
+Given kullanici Amazon anasayfaya gider.....................................passed
+Then amazonda "Samsung" icin arama yapar....................................passed
+And sonuclarin "Samsung" icerdigini test eder...............................passed
+And 3 saniye bekler.........................................................passed
+And sayfayi kapatir.........................................................passed
+]]></system-out>
+</testcase>
+<testcase classname="US1005 Kullanici amazonda urun aratip 2.urun detaylarini test eder" name="TC09 Kullanici arama sonuclarinda istedigi urunu test edebilmeli" time="13.906">
+<system-out><![CDATA[
+Given kullanici "amazonUrl" anasayfaya gider................................passed
+When amazonda "Nutella" icin arama yapar....................................passed
+And 5 saniye bekler.........................................................passed
+And 3.urune gider...........................................................passed
+Then urun isminin "Nutella" icerdigini test eder............................passed
 ]]></system-out>
 </testcase>
 </testsuite>

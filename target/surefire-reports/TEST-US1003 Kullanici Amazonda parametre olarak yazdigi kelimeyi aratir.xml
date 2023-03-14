@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" name="US1005 Kullanici amazonda urun aratip 2.urun detaylarini test eder" time="13.916" tests="1" errors="0" skipped="0" failures="0">
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" name="US1003 Kullanici Amazonda parametre olarak yazdigi kelimeyi aratir" time="10.478" tests="1" errors="0" skipped="0" failures="0">
   <properties>
     <property name="java.specification.version" value="18"/>
     <property name="webdriver.chrome.driver" value="/Users/ahmetbulutluoz/.cache/selenium/chromedriver/mac-arm64/111.0.5563.64/chromedriver"/>
@@ -58,5 +58,5 @@
     <property name="socksNonProxyHosts" value="local|*.local|169.254/16|*.169.254/16"/>
     <property name="java.class.version" value="62.0"/>
   </properties>
-  <testcase name="TC09 Kullanici arama sonuclarinda istedigi urunu test edebilmeli" classname="US1005 Kullanici amazonda urun aratip 2.urun detaylarini test eder" time="13.916"/>
+  <testcase name="TC07 Kullanici parametre ile arama yaptirabilmeli" classname="US1003 Kullanici Amazonda parametre olarak yazdigi kelimeyi aratir" time="10.478"/>
 </testsuite>

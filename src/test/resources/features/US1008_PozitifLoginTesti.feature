@@ -1,3 +1,4 @@
+@regression
 Feature: US1008 gecerli kullanici adi ve sifre ile sisteme giris
 
 

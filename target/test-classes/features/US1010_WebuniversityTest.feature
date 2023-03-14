@@ -1,3 +1,4 @@
+@regression
 Feature: US1010 WebUniversity Testi
 
   @wip

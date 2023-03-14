@@ -1,12 +1,70 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="Cucumber" time="15.467" tests="1" skipped="0" failures="0" errors="0">
-<testcase classname="US1005 Kullanici amazonda urun aratip 2.urun detaylarini test eder" name="TC09 Kullanici arama sonuclarinda istedigi urunu test edebilmeli" time="15.389">
+<testsuite name="Cucumber" time="65.686" tests="9" skipped="0" failures="0" errors="0">
+<testcase classname="US1002 Kullanici Background kullanarak Amazonda arama yapar" name="TC04 Kullanici Amazonda Nutella aratir" time="10.061">
+<system-out><![CDATA[
+Given kullanici Amazon anasayfaya gider.....................................passed
+Then arama kutusuna Nutella yazar ve enter tusuna basar.....................passed
+And arama sonuclarinin Nutella icerdigini test eder.........................passed
+And sayfayi kapatir.........................................................passed
+]]></system-out>
+</testcase>
+<testcase classname="US1002 Kullanici Background kullanarak Amazonda arama yapar" name="TC05 kullanici Amazonda Java aratir" time="12.031">
+<system-out><![CDATA[
+Given kullanici Amazon anasayfaya gider.....................................passed
+When arama kutusuna Java yazar ve enter tusuna basar........................passed
+Then arama sonuclarinin Java icerdigini test eder...........................passed
+And sayfayi kapatir.........................................................passed
+]]></system-out>
+</testcase>
+<testcase classname="US1002 Kullanici Background kullanarak Amazonda arama yapar" name="TC06 kullanici Amazonda Apple aratir" time="5.734">
+<system-out><![CDATA[
+Given kullanici Amazon anasayfaya gider.....................................passed
+When arama kutusuna Apple yazar ve enter tusuna basar.......................passed
+Then arama sonuclarinin Apple icerdigini test eder..........................passed
+And sayfayi kapatir.........................................................passed
+]]></system-out>
+</testcase>
+<testcase classname="US1004 kullanici parametre olarak girdigi Url'e gider" name="TC08 Kullanici url'i parametre olarak girebilmeli" time="10.144">
+<system-out><![CDATA[
+Given kullanici "qdUrl" anasayfaya gider....................................passed
+And 5 saniye bekler.........................................................passed
+Then "qdUrl" sayfasina gittigini test eder..................................passed
+And sayfayi kapatir.........................................................passed
+]]></system-out>
+</testcase>
+<testcase classname="US1006 Kullanici Scenario outline ile birden fazla kelime aratir" name="TC10 Amazon coklu urun testi - Example #1.1" time="6.181">
 <system-out><![CDATA[
 Given kullanici "amazonUrl" anasayfaya gider................................passed
-When amazonda "Nutella" icin arama yapar....................................passed
-And 5 saniye bekler.........................................................passed
-And 3.urune gider...........................................................passed
-Then urun isminin "Nutella" icerdigini test eder............................passed
+Then amazonda "Nutella" icin arama yapar....................................passed
+And sonuclarin "Nutella" icerdigini test eder...............................passed
+]]></system-out>
+</testcase>
+<testcase classname="US1006 Kullanici Scenario outline ile birden fazla kelime aratir" name="TC10 Amazon coklu urun testi - Example #1.2" time="6.168">
+<system-out><![CDATA[
+Given kullanici "amazonUrl" anasayfaya gider................................passed
+Then amazonda "Java" icin arama yapar.......................................passed
+And sonuclarin "Java" icerdigini test eder..................................passed
+]]></system-out>
+</testcase>
+<testcase classname="US1006 Kullanici Scenario outline ile birden fazla kelime aratir" name="TC10 Amazon coklu urun testi - Example #1.3" time="5.629">
+<system-out><![CDATA[
+Given kullanici "amazonUrl" anasayfaya gider................................passed
+Then amazonda "Samsung" icin arama yapar....................................passed
+And sonuclarin "Samsung" icerdigini test eder...............................passed
+]]></system-out>
+</testcase>
+<testcase classname="US1006 Kullanici Scenario outline ile birden fazla kelime aratir" name="TC10 Amazon coklu urun testi - Example #1.4" time="4.475">
+<system-out><![CDATA[
+Given kullanici "amazonUrl" anasayfaya gider................................passed
+Then amazonda "Apple" icin arama yapar......................................passed
+And sonuclarin "Apple" icerdigini test eder.................................passed
+]]></system-out>
+</testcase>
+<testcase classname="US1006 Kullanici Scenario outline ile birden fazla kelime aratir" name="TC10 Amazon coklu urun testi - Example #1.5" time="5.123">
+<system-out><![CDATA[
+Given kullanici "amazonUrl" anasayfaya gider................................passed
+Then amazonda "Furkan" icin arama yapar.....................................passed
+And sonuclarin "Furkan" icerdigini test eder................................passed
 ]]></system-out>
 </testcase>
 </testsuite>
