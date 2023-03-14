@@ -7,5 +7,5 @@ Feature: US1005 Kullanici amazonda urun aratip 2.urun detaylarini test eder
     When amazonda "Nutella" icin arama yapar
     And 5 saniye bekler
     And 3.urune gider
-    Then urun isminin "Kutella" icerdigini test eder
-    And sayfayi kapatir
+    Then urun isminin "Nutella" icerdigini test eder
+
