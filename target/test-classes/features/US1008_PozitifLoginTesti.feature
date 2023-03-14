@@ -6,9 +6,9 @@ Feature: US1008 gecerli kullanici adi ve sifre ile sisteme giris
     Given kullanici "qdUrl" anasayfaya gider
     Then ilk login linkine tiklar
     And username olarak "qdGecerliUsername" girer
-    And password olarak "qdGecerliPassword" girer
+    And password olarak "qdGecersizPassword" girer
     And 10 saniye bekler
     And login butonuna basar
     Then basarili olarak giris yapildigini test eder
-
+    And sayfayi kapatir
 
